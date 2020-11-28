@@ -1,0 +1,17 @@
+.l-main {
+  margin-top: 72px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.l-main__content {
+  .l-main__title {
+    max-width: 500px;
+    margin-bottom: 24px;
+  }
+  .l-main__text {
+    max-width: 400px;
+    margin-bottom: 40px;
+    opacity: .6;
+  }
+}

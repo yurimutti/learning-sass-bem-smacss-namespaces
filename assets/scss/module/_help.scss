@@ -1,0 +1,9 @@
+.c-help {
+  display: flex;
+  align-items: center;
+}
+
+.c-help__text {
+  line-height: $line-height-general;
+  margin-left: 16px;
+}

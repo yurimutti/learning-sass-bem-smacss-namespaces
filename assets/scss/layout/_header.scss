@@ -1,0 +1,13 @@
+.l-header__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 32px;
+    
+    .c-user-area__link {
+        margin-right: 16px;
+    }
+}
+
+

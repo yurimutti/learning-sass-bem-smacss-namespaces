@@ -1,0 +1,22 @@
+.c-main-menu__list {
+  display: flex;
+  
+  li+li {
+    margin-left: 16px;
+  }
+
+  li+li::before {
+    content: '';
+    display: inline-block;
+    background: $blue;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin-right: 16px;
+    margin-bottom: 2px;
+  }
+}
+
+.c-main-menu__item:hover {
+  color: $pink;
+}

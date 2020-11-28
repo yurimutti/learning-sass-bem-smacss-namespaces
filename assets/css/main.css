@@ -1,0 +1,149 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap);
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #E2E5FE;
+  color: #222;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: 700;
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.l-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.l-container-fluid {
+  max-width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.l-header__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 32px;
+}
+
+.l-header__inner .c-user-area__link {
+  margin-right: 16px;
+}
+
+.l-main {
+  margin-top: 72px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.l-main__content .l-main__title {
+  max-width: 500px;
+  margin-bottom: 24px;
+}
+
+.l-main__content .l-main__text {
+  max-width: 400px;
+  margin-bottom: 40px;
+  opacity: .6;
+}
+
+.l-footer {
+  margin-top: 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.c-btn {
+  padding: 14px 32px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  border: none;
+}
+
+.c-btn--primary {
+  color: #fff;
+  background: #CC42D4;
+}
+
+.c-btn--primary:hover {
+  background: #b12ab9;
+}
+
+.c-help {
+  display: flex;
+  align-items: center;
+}
+
+.c-help__text {
+  line-height: 24px;
+  margin-left: 16px;
+}
+
+.c-main-menu__list {
+  display: flex;
+}
+
+.c-main-menu__list li + li {
+  margin-left: 16px;
+}
+
+.c-main-menu__list li + li::before {
+  content: '';
+  display: inline-block;
+  background: #273BBE;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin-right: 16px;
+  margin-bottom: 2px;
+}
+
+.c-main-menu__item:hover {
+  color: #CC42D4;
+}
+
+.c-scroll {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.c-scroll__text {
+  margin-left: 8px;
+}
+
+.c-user-area__link {
+  color: #CC42D4;
+}
+
+.c-user-area__link:hover {
+  color: #89218f;
+}

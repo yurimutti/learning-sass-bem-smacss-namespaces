@@ -1,0 +1,6 @@
+.c-user-area__link {
+  color: $pink;
+  &:hover {
+    color: darken($pink, 20%);
+  }
+}
