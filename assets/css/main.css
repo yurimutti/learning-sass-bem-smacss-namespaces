@@ -8,6 +8,7 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+  transition: color .2s;
 }
 
 ul {
@@ -86,6 +87,7 @@ p {
   font-family: 'Montserrat', sans-serif;
   cursor: pointer;
   border: none;
+  transition: background .3s;
 }
 
 .c-btn--primary {
