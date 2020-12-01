@@ -25,3 +25,21 @@
 .c-main-menu__item:hover {
   color: $pink;
 }
+
+.c-main-menu__section {
+  @include md { 
+  .c-main-menu__one,
+  .c-main-menu__two,
+  .c-main-menu__three {
+    background-color: $blue;
+    height: 4px;
+    width: 100%;
+    margin: 6px auto;
+  }
+
+  .c-main-menu__toggle {
+    width: 40px;
+    height: 30px;
+  }
+  }
+}

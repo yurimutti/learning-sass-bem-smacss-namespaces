@@ -4,7 +4,8 @@
   justify-content: space-between;
 
   @include sm {
-    display: block;
+    flex-direction: column;
+    text-align: center;
   }
 
   .l-main__img {
@@ -17,26 +18,22 @@
   .l-main__title {
     max-width: 500px;
     margin-bottom: 24px;
-
-    @include md {
-      font-size: 32px;
-      line-height: 39px;
-    }
-    @include sm {
-      font-size: 24px;
-      line-height: 33px;
-    }
   }
   .l-main__text {
     max-width: 500px;
     margin-bottom: 40px;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
     opacity: .6;
-
-    @include md {
-      font-size: 16px;
-      line-height: 24px;
+  }
+  @include sm {
+    .l-main__btn {
+      margin: 0 auto;
     }
   }
+
+  .l-container {
+    max-width: 300px;
+  }
+
 }

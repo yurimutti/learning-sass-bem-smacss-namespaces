@@ -1,13 +1,13 @@
 // Mixins
 
 @mixin sm {
-  @media (max-width: 730px) {
+  @media (max-width: 768px) {
     @content;
   }
 }
 
 @mixin md {
-  @media (max-width: 1080px) {
+  @media (max-width: 1024px) {
     @content;
   }
 }

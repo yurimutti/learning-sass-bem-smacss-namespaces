@@ -11,13 +11,13 @@
     @include sm {
       margin: 0 auto;
     }
+  }
 
   .c-help__avatar  {
     @include sm {
       display: none;
     }
-  }
-  }
+}
 
   .c-scroll {
     @include sm {
@@ -30,5 +30,4 @@
       display: none;
     }
   }
-
 }
