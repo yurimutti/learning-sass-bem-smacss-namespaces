@@ -2,16 +2,41 @@
   margin-top: 72px;
   display: flex;
   justify-content: space-between;
+
+  @include sm {
+    display: block;
+  }
+
+  .l-main__img {
+    margin-right: 42px;
+  }
+
 }
 
 .l-main__content {
   .l-main__title {
     max-width: 500px;
     margin-bottom: 24px;
+
+    @include md {
+      font-size: 32px;
+      line-height: 39px;
+    }
+    @include sm {
+      font-size: 24px;
+      line-height: 33px;
+    }
   }
   .l-main__text {
-    max-width: 400px;
+    max-width: 500px;
     margin-bottom: 40px;
+    font-size: 24px;
+    line-height: 36px;
     opacity: .6;
+
+    @include md {
+      font-size: 16px;
+      line-height: 24px;
+    }
   }
 }

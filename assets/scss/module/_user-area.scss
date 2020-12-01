@@ -1,3 +1,9 @@
+.c-user-area {
+  @include md {
+    display: none;
+  }
+}
+
 .c-user-area__link {
   color: $pink;
   &:hover {

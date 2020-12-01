@@ -1,0 +1,19 @@
+// Mixins
+
+@mixin sm {
+  @media (max-width: 720px) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (max-width: 1080px) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}

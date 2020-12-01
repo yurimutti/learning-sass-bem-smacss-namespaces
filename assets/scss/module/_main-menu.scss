@@ -1,3 +1,8 @@
+.c-main-menu {
+  @include md {
+    display: none;
+  }
+}
 .c-main-menu__list {
   display: flex;
   
