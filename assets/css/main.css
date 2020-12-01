@@ -3,6 +3,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   background: #EAECFE;
   color: #222;
+  height: 100vh;
 }
 
 a {
@@ -39,9 +40,7 @@ p {
 }
 
 .l-container-fluid {
-  max-width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
+  max-width: 90%;
 }
 
 .l-header__inner {
@@ -62,7 +61,7 @@ p {
   justify-content: space-between;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 730px) {
   .l-main {
     display: block;
   }
@@ -84,7 +83,7 @@ p {
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 730px) {
   .l-main__content .l-main__title {
     font-size: 24px;
     line-height: 33px;
@@ -113,31 +112,31 @@ p {
   align-items: center;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 730px) {
   .l-footer {
     margin-top: 42px;
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 730px) {
   .l-footer .c-help {
     margin: 0 auto;
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 730px) {
   .l-footer .c-help .c-help__avatar {
     display: none;
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 730px) {
   .l-footer .c-scroll {
     display: none;
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 730px) {
   .l-footer .c-scroll__text {
     display: none;
   }
