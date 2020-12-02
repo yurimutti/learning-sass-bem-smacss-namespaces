@@ -1,5 +1,5 @@
 const hamburger = document.getElementById('hamburger');
-const navUL = document.getElementById('navUL');
+const navUL = document.getElementById('menuList');
 const block = document.getElementById('inner');
 
 
