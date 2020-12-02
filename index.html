@@ -9,21 +9,20 @@
 </head>
 <body>
   <header class="l-header l-container">
-    
-    <div class="l-header__inner">
+    <div class="l-header__inner" id="inner">
       <a href="index.html" class="c-logo"><img src="assets/img/card.svg" alt="Logo"></a>
+      <button class="c-main-menu__hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </button>
       <nav class="c-main-menu">
-        <button class="c-main-menu__hamburger" id="hamburger">
-          <i class="fas fa-bars"></i>
-        </button>
         <ul class="c-main-menu__list" id="navUL">
-          <li><a href="#" class="c-main-menu__item is-active">Pagamento</a></li>
+          <li><a href="#" class="c-main-menu__item">Pagamento</a></li>
           <li><a href="#" class="c-main-menu__item">Suporte</a></li>
           <li><a href="#" class="c-main-menu__item">Downloads</a></li>
         </ul>
       </nav>
-      
-      <div class="c-user-area">
+ 
+      <div class="c-user-area" id="userArea">
         <a href="#" class="c-user-area__link">Login</a>
         <button class="c-user-area__btn c-btn c-btn--primary">Quero ser cliente</button>
       </div>

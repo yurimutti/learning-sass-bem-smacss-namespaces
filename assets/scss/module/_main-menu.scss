@@ -4,11 +4,6 @@
     margin-left: 16px;
   }
 
-  display: flex;
-  @include md {
-    display: none;
-  }
-  
   li+li::before {
     content: '';
     display: inline-block;
@@ -18,7 +13,18 @@
     border-radius: 50%;
     margin-right: 16px;
     margin-bottom: 2px;
+    @include sm {
+      display: none;
+    }
   }
+
+  display: flex;
+
+  @include md {
+    display: none;
+  }
+  
+  
 }
 
 .c-main-menu__item:hover {
@@ -28,6 +34,9 @@
 .c-main-menu__hamburger {
   display: none;
     @include md {
+      position: absolute;
+      top: 34px;
+      right: 15px;
       display: block;
       background-color: transparent;
       border: 0;
@@ -42,6 +51,12 @@
 
 .c-main-menu__list.show {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  @include sm {
+    flex-direction: column;
+    line-height: 30px;
+  }
 }
 
 

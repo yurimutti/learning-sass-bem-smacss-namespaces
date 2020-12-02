@@ -4,6 +4,7 @@
   justify-content: space-between;
 
   @include sm {
+    margin-top: 32px;
     flex-direction: column;
     text-align: center;
   }

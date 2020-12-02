@@ -61,6 +61,10 @@ p {
   margin-right: 16px;
 }
 
+.l-header__inner.block {
+  display: block;
+}
+
 .l-main {
   margin-top: 72px;
   display: flex;
@@ -69,6 +73,7 @@ p {
 
 @media (max-width: 768px) {
   .l-main {
+    margin-top: 32px;
     flex-direction: column;
     text-align: center;
   }
@@ -198,12 +203,6 @@ p {
   margin-left: 16px;
 }
 
-@media (max-width: 1024px) {
-  .c-main-menu__list {
-    display: none;
-  }
-}
-
 .c-main-menu__list li + li::before {
   content: '';
   display: inline-block;
@@ -213,6 +212,18 @@ p {
   border-radius: 50%;
   margin-right: 16px;
   margin-bottom: 2px;
+}
+
+@media (max-width: 768px) {
+  .c-main-menu__list li + li::before {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .c-main-menu__list {
+    display: none;
+  }
 }
 
 .c-main-menu__item:hover {
@@ -225,6 +236,9 @@ p {
 
 @media (max-width: 1024px) {
   .c-main-menu__hamburger {
+    position: absolute;
+    top: 34px;
+    right: 15px;
     display: block;
     background-color: transparent;
     border: 0;
@@ -239,6 +253,15 @@ p {
 
 .c-main-menu__list.show {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .c-main-menu__list.show {
+    flex-direction: column;
+    line-height: 30px;
+  }
 }
 
 .c-scroll {
@@ -255,10 +278,6 @@ p {
   .c-user-area {
     display: none;
   }
-}
-
-.c-user-area.show {
-  display: flex;
 }
 
 .c-user-area__link {
