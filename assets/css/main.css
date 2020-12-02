@@ -255,13 +255,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-@media (max-width: 768px) {
-  .c-main-menu__list.show {
-    flex-direction: column;
-    line-height: 30px;
-  }
+  padding-top: 24px;
 }
 
 .c-scroll {

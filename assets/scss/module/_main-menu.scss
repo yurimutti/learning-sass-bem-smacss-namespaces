@@ -53,10 +53,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  @include sm {
-    flex-direction: column;
-    line-height: 30px;
-  }
+  padding-top: 24px;
 }
 
 
