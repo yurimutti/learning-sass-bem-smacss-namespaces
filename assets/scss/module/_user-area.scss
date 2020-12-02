@@ -4,6 +4,10 @@
   }
 }
 
+.c-user-area.show {
+  display: flex;
+}
+
 .c-user-area__link {
   color: $pink;
   &:hover {

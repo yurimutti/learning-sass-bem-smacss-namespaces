@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap);
 body {
   font-family: 'Montserrat', sans-serif;
-  background: #EAECFE;
+  background: #F1F3FE;
   color: #222;
   height: 100vh;
 }
@@ -10,12 +10,6 @@ body {
 html {
   /* a cada 1rem será considera 10px */
   font-size: 62.5%;
-}
-
-@media (max-width: 1024px) {
-  html {
-    font-size: 50%;
-  }
 }
 
 body {
@@ -38,7 +32,7 @@ img {
 }
 
 h1 {
-  font-size: 4.8rem;
+  font-size: 6.4rem;
   line-height: 5.8rem;
   font-weight: 700;
 }
@@ -85,16 +79,38 @@ p {
 }
 
 .l-main__content .l-main__title {
-  max-width: 500px;
+  max-width: 720px;
   margin-bottom: 24px;
 }
 
+@media (max-width: 1024px) {
+  .l-main__content .l-main__title {
+    font-size: 4.8rem;
+    line-height: 5.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .l-main__content .l-main__title {
+    font-size: 3.5rem;
+    line-height: 4.2rem;
+  }
+}
+
 .l-main__content .l-main__text {
-  max-width: 500px;
-  margin-bottom: 40px;
-  font-size: 2.4rem;
-  line-height: 3.6rem;
+  max-width: 380px;
+  padding-bottom: 40px;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
   opacity: .6;
+}
+
+@media (max-width: 768px) {
+  .l-main__content .l-main__text {
+    font-size: 1.6rem;
+    line-height: 2.3rem;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 768px) {
@@ -123,6 +139,7 @@ p {
 @media (max-width: 768px) {
   .l-footer .c-help {
     margin: 0 auto;
+    padding-bottom: 16px;
   }
 }
 
@@ -173,18 +190,18 @@ p {
   margin-left: 16px;
 }
 
-@media (max-width: 1024px) {
-  .c-main-menu {
-    display: none;
-  }
-}
-
 .c-main-menu__list {
   display: flex;
 }
 
 .c-main-menu__list li + li {
   margin-left: 16px;
+}
+
+@media (max-width: 1024px) {
+  .c-main-menu__list {
+    display: none;
+  }
 }
 
 .c-main-menu__list li + li::before {
@@ -202,19 +219,26 @@ p {
   color: #CC42D4;
 }
 
+.c-main-menu__hamburger {
+  display: none;
+}
+
 @media (max-width: 1024px) {
-  .c-main-menu__section .c-main-menu__one,
-  .c-main-menu__section .c-main-menu__two,
-  .c-main-menu__section .c-main-menu__three {
-    background-color: #273BBE;
-    height: 4px;
-    width: 100%;
-    margin: 6px auto;
+  .c-main-menu__hamburger {
+    display: block;
+    background-color: transparent;
+    border: 0;
+    color: #273BBE;
+    font-size: 24px;
+    cursor: pointer;
   }
-  .c-main-menu__section .c-main-menu__toggle {
-    width: 40px;
-    height: 30px;
+  .c-main-menu__hamburger:focus {
+    outline: none;
   }
+}
+
+.c-main-menu__list.show {
+  display: flex;
 }
 
 .c-scroll {
@@ -233,10 +257,18 @@ p {
   }
 }
 
+.c-user-area.show {
+  display: flex;
+}
+
 .c-user-area__link {
   color: #CC42D4;
 }
 
 .c-user-area__link:hover {
   color: #89218f;
+}
+
+.is-active {
+  color: #CC42D4;
 }

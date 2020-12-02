@@ -1,15 +1,14 @@
-.c-main-menu {
-  @include md {
-    display: none;
-  }
-}
 .c-main-menu__list {
-  display: flex;
   
   li+li {
     margin-left: 16px;
   }
 
+  display: flex;
+  @include md {
+    display: none;
+  }
+  
   li+li::before {
     content: '';
     display: inline-block;
@@ -26,20 +25,26 @@
   color: $pink;
 }
 
-.c-main-menu__section {
-  @include md { 
-  .c-main-menu__one,
-  .c-main-menu__two,
-  .c-main-menu__three {
-    background-color: $blue;
-    height: 4px;
-    width: 100%;
-    margin: 6px auto;
-  }
-
-  .c-main-menu__toggle {
-    width: 40px;
-    height: 30px;
-  }
+.c-main-menu__hamburger {
+  display: none;
+    @include md {
+      display: block;
+      background-color: transparent;
+      border: 0;
+      color: $blue;
+      font-size: 24px;
+      cursor: pointer;
+      &:focus {
+        outline: none;
+      }
   }
 }
+
+.c-main-menu__list.show {
+  display: flex;
+}
+
+
+
+
+
